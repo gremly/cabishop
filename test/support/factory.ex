@@ -9,7 +9,7 @@ defmodule CabiShop.Factory do
   def build_voucher(rules \\ %{payx: %{pay: 1, get: 2}}) do
     %Product{
       code: "VOUCHER",
-      name: "Cabify Voucher",
+      name: "Test Voucher",
       price: 5.00,
       rules: rules 
     }
@@ -18,7 +18,7 @@ defmodule CabiShop.Factory do
   def build_mug(rules \\ %{}) do
     %Product{
       code: "MUG",
-      name: "Cabify Coffee Mug",
+      name: "Test Coffee Mug",
       price: 7.50,
       rules: rules 
     }
@@ -27,7 +27,7 @@ defmodule CabiShop.Factory do
   def build_tshirt(rules \\ %{bulk: %{qty: 3, discount: 0.05}}) do
     %Product{
       code: "TSHIRT",
-      name: "Cabify T-Shirt",
+      name: "Test T-Shirt",
       price: 20.00,
       rules: rules 
     }
