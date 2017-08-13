@@ -5,7 +5,13 @@ defmodule CabiShop.Application do
 
   use Application
 
+  alias CabiShop.Repo
+
   def start(_type, _args) do
+
+    # Ensure to initialize the database
+    Repo.init()
+
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: CabiShop.Worker.start_link(arg)
